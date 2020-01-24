@@ -1,1 +1,28 @@
 // Mixins in here
+
+.center(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+  }
+
+.custom-btn(@bg-color: @button-bg, @width:200px, @font-color:#FFFFFF){
+  display: block;
+  background-color: @bg-color;
+  margin: 0 10 20px;
+  cursor: pointer;
+  width: @width;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color:@font-color;
+  padding-top: 5%;
+  padding-left: 20%;
+  }
+
+  @media @phone {
+    width: 90%;
+    height: 50px;
+    font-size: 2.5rem;
+}
